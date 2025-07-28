@@ -1,0 +1,13 @@
+{
+    "REGULAR_BASE_URL": "https://api.dev.tu-dominio.com",
+    "PUBLIC_IP_SERVICE_URL": "https://api.ipify.org",
+    "URL_PUBLISH_WEB": "https://app.dev.tu-dominio.com",
+    "SUPABASE_URL": "https://tu-id-dev.supabase.co",
+    "SUPABASE_ANON_KEY": "ey...tu_clave_anon_de_desarrollo",
+    "TOKEN_SYNC": "dev_token_sync_value",
+    "TOKEN_SYNC_END_FLOW_KEY_ONE": "dev_key_one",
+    "TOKEN_SYNC_END_FLOW_KEY_TWO": "dev_key_two",
+    "SECURITY_CLIENT_ID_WEB": "dev_security_client_id_web",
+    "SECURITY_CLIENT_SECRET_WEB": "dev_security_client_secret_web",
+    "SECURITY_API_KEY_WEB": "dev_security_api_key_web"
+}

@@ -1,0 +1,33 @@
+import 'package:chasis_admin_dashboard/common/enviromnents/values/environment_values.dart';
+import 'package:chasis_admin_dashboard/config/platform/platform.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+import 'dart:js';
+
+class PlatformConfigImpl extends PlatformConfig {
+  @override
+  void start() {
+    setUrlStrategy(NoHistoryUrlStrategy());
+  }
+
+  @override
+  void startUI(EnvironmentValues environmentValues) {
+    try {
+      _initializeRUM(environmentValues);
+      SemanticsBinding.instance.ensureSemantics();
+    } catch (_) {}
+  }
+
+  void _initializeRUM(EnvironmentValues environmentValues) {
+    final supaBaseParams = environmentValues.supabase;
+    final rumInitializeParams = [supaBaseParams.url, supaBaseParams.anonKey];
+
+    context.callMethod('RUMinitializer', rumInitializeParams);
+  }
+}
+
+class NoHistoryUrlStrategy extends PathUrlStrategy {
+  @override
+  void pushState(Object? state, String title, String url) =>
+      replaceState(state, title, url);
+}
