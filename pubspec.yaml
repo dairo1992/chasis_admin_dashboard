@@ -1,0 +1,23 @@
+name: chasis_admin_dashboard
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  desing_system:
+    git:
+      url: https://github.com/dairo1992/desing_system.git
+      ref: v1.0.0 # <-- Esta es la etiqueta que creaste
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
