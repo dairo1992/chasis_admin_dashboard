@@ -7,15 +7,15 @@ import 'package:flutter/cupertino.dart';
 
 class AppConfigStrategyImpl extends AppConfigStrategy {
   EnvironmentValues get _environmentValues {
-    return EnvironmentValuesProvider.instance.get();
+    return EnvironmentValuesProvider.get();
   }
 
   @override
-  Future start() {
+  Future<void> start() async {
     WidgetsFlutterBinding.ensureInitialized();
     PlatformConfig.instance.start();
-    final configManager = setUpDependencies(_environmentValues);
-    return configManager.start();
+
+    setUpDependencies(_environmentValues);
   }
 
   @override

@@ -16,7 +16,7 @@ class AppRouteObserver extends RouteObserver {
   }
 
   @override
-  void disPop(Route route, Route? previousRoute) async {
+  void didPop(Route route, Route? previousRoute) async {
     super.didPop(route, previousRoute);
     final returnsFromPage = (route.settings is CustomTransitionPage);
     if (!returnsFromPage && _isKnowModalRoute(route)) return;

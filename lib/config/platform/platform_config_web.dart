@@ -1,8 +1,9 @@
-import 'package:chasis_admin_dashboard/common/enviromnents/values/environment_values.dart';
-import 'package:chasis_admin_dashboard/config/platform/platform.dart';
+import 'dart:js';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
-import 'dart:js';
+
+import 'package:chasis_admin_dashboard/common/enviromnents/values/environment_values.dart';
+import 'package:chasis_admin_dashboard/config/platform/platform.dart';
 
 class PlatformConfigImpl extends PlatformConfig {
   @override

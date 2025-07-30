@@ -1,4 +1,4 @@
-import 'package:chasis_admin_dashboard/common/dependency_injection/service_locator.dart';
+import 'package:chasis_admin_dashboard/dependency_injection/service_locator.dart';
 import 'package:chasis_admin_dashboard/common/router/app_route.dart';
 import 'package:chasis_admin_dashboard/common/router/common_routes/root_route.dart';
 import 'package:chasis_admin_dashboard/common/router/route_observer/app_route_observer.dart';

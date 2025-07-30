@@ -1,9 +1,9 @@
-final class ClientKeysEnvironmentValues {
-  final String clientSecret;
-  final String clientId;
+// final class ClientKeysEnvironmentValues {
+//   const ClientKeysEnvironmentValues({
+//     required this.clientSecret,
+//     required this.clientId,
+//   });
 
-  ClientKeysEnvironmentValues({
-    required this.clientSecret,
-    required this.clientId,
-  });
-}
+//   final String clientSecret;
+//   final String clientId;
+// }

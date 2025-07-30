@@ -1,6 +1,6 @@
-final class ApiKeyEnvironmentValues {
-  final String mobile;
-  final String web;
+// final class ApiKeyEnvironmentValues {
+//   const ApiKeyEnvironmentValues({required this.mobile, required this.web});
 
-  ApiKeyEnvironmentValues({required this.mobile, required this.web});
-}
+//   final String mobile;
+//   final String web;
+// }
