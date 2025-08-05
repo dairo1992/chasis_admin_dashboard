@@ -1,4 +1,4 @@
-import 'package:chasis_admin_dashboard/common/app/app_config_strategy.dart';
+import 'package:chasis_admin_dashboard/common/app_config/app_config_strategy.dart';
 
 final class AppConfig {
   static late AppConfigStrategy instance;

@@ -4,6 +4,8 @@ if(dart.library.html) 'package:chasis_admin_dashboard/config/platform/platform_c
 
 abstract class PlatformConfig {
   static PlatformConfig instance = PlatformConfigImpl() as PlatformConfig;
+
   void start();
+  
   void startUI(EnvironmentValues environmentValues);
 }

@@ -1,5 +1,8 @@
+// ignore_for_file: avoid_web_libraries_in_flutter
+// ignore: deprecated_member_use
 import 'dart:js';
 import 'package:flutter/rendering.dart';
+// ignore: depend_on_referenced_packages
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 import 'package:chasis_admin_dashboard/common/enviromnents/values/environment_values.dart';

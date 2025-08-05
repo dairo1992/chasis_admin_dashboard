@@ -1,4 +1,4 @@
-import 'package:chasis_admin_dashboard/common/app/app_config_strategy.dart';
+import 'package:chasis_admin_dashboard/common/app_config/app_config_strategy.dart';
 import 'package:chasis_admin_dashboard/common/enviromnents/environment_values_provider.dart';
 import 'package:chasis_admin_dashboard/common/enviromnents/values/environment_values.dart';
 import 'package:chasis_admin_dashboard/config/platform/platform.dart';
@@ -7,7 +7,7 @@ import 'package:flutter/cupertino.dart';
 
 class AppConfigStrategyImpl extends AppConfigStrategy {
   EnvironmentValues get _environmentValues {
-    return EnvironmentValuesProvider.get();
+    return EnvironmentValuesProvider.instance.get();
   }
 
   @override
@@ -15,7 +15,8 @@ class AppConfigStrategyImpl extends AppConfigStrategy {
     WidgetsFlutterBinding.ensureInitialized();
     PlatformConfig.instance.start();
 
-    setUpDependencies(_environmentValues);
+    final configManager = setUpDependencies(_environmentValues);
+    await configManager.start();
   }
 
   @override

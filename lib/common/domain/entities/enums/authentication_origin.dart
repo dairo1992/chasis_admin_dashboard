@@ -1,0 +1,1 @@
+enum AuthenticationOrigin { mock, supaBase }

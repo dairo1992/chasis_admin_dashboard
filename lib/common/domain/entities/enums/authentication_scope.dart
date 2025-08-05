@@ -1,0 +1,1 @@
+enum AuthenticationScope { authenticatedZone, loginWithPassword }
